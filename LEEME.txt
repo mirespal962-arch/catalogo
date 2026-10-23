@@ -1,0 +1,23 @@
+AZUL — Catálogo de productos
+
+ARCHIVOS
+- index.html: página principal.
+- styles.css: estilos, diseño adaptable y tema oscuro.
+- script.js: filtro por categoría, carrito simulado y mensajes de retroalimentación.
+- img/: ilustraciones SVG locales de los productos.
+- boceto-anotado.pdf: boceto de la interfaz con anotaciones de los cinco principios.
+
+CÓMO USAR
+1. Descomprime el ZIP completo.
+2. Abre index.html con un navegador actualizado.
+3. Filtra por categoría, agrega productos y abre el carrito para cambiar cantidades.
+4. El Reloj Meridian está agotado; su botón no permite agregarlo.
+
+PRINCIPIOS APLICADOS
+- Visibilidad: cada tarjeta muestra nombre, categoría, precio, descripción y estado.
+- Retroalimentación: aviso temporal y contador al agregar un producto.
+- Restricciones: los artículos agotados tienen el botón deshabilitado.
+- Consistencia: componentes repetibles, paleta y tipografía uniformes.
+- Affordance: controles con apariencia de botón, contraste y etiquetas de acción.
+
+Proyecto académico. No implementa pagos ni base de datos.

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#081321">
+  <title>AZUL — Catálogo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="AZUL, inicio"><span class="brand-mark">A</span><span>AZUL<span class="brand-dot">.</span></span></a>
+    <nav class="nav-links" aria-label="Navegación principal"><a href="#catalogo">Catálogo</a><a href="#nosotros">Acerca de</a></nav>
+    <button class="cart-button" id="open-cart" aria-label="Ver carrito">
+      <span class="cart-icon" aria-hidden="true">▱</span><span>Carrito</span><span class="cart-count" id="cart-count">0</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow"><span class="eyebrow-line"></span> OBJETOS PARA TU DÍA A DÍA</div>
+      <h1>Menos ruido.<br><span>Más intención.</span></h1>
+      <p>Una selección de piezas funcionales, diseñadas para acompañarte todos los días.</p>
+      <a class="hero-link" href="#catalogo">Explorar catálogo <span aria-hidden="true">↘</span></a>
+      <div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div>
+      <div class="hero-index"><span>01</span> / COLECCIÓN ESENCIAL</div>
+    </section>
+
+    <section class="catalog-section" id="catalogo">
+      <div class="section-heading">
+        <div><div class="eyebrow">SELECCIÓN CURADA</div><h2>Encuentra tu esencial<span>.</span></h2></div>
+        <div class="result-label"><span id="result-count">6</span> productos</div>
+      </div>
+      <div class="toolbar">
+        <div class="filter-wrap"><label for="category-filter">Categoría</label>
+          <select id="category-filter">
+            <option value="todos">Todos los productos</option>
+            <option value="tecnologia">Tecnología</option>
+            <option value="accesorios">Accesorios</option>
+          </select>
+        </div>
+        <div class="filter-hint"><span class="filter-dot"></span> Diseño útil, todos los días</div>
+      </div>
+      <div class="product-grid" id="product-grid" aria-live="polite"></div>
+      <p class="empty-state" id="empty-state" hidden>No hay productos en esta categoría.</p>
+    </section>
+
+    <section class="principles" id="nosotros">
+      <div><div class="eyebrow">NUESTRA FILOSOFÍA</div><h2>Lo esencial,<br><span>bien pensado.</span></h2></div>
+      <div class="principle-copy"><p>Creemos en objetos honestos: fáciles de entender, agradables de usar y hechos para durar.</p><div class="principle-tags"><span>01 / Función</span><span>02 / Forma</span><span>03 / Intención</span></div></div>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#"><span class="brand-mark">A</span><span>AZUL<span class="brand-dot">.</span></span></a><span>Una tienda conceptual · Proyecto académico</span><span>© 2026 AZUL</span></footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="scrim" id="scrim" hidden></div>
+  <aside class="cart-panel" id="cart-panel" aria-label="Carrito de compras" aria-hidden="true">
+    <div class="cart-head"><div><div class="eyebrow">TU SELECCIÓN</div><h2>Carrito<span>.</span></h2></div><button class="close-cart" id="close-cart" aria-label="Cerrar carrito">×</button></div>
+    <div class="cart-items" id="cart-items"><p class="cart-empty">Tu carrito está vacío.<br><span>Agrega algo que te guste.</span></p></div>
+    <div class="cart-bottom"><div class="cart-total"><span>Total</span><strong id="cart-total">$0.00</strong></div><button class="checkout-button" id="checkout-button">Finalizar demo <span>↗</span></button><p class="demo-note">Demostración académica · No se realizan pagos.</p></div>
+  </aside>
+  <script src="script.js"></script>
+</body>
+</html>
